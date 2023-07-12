@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Github Farorites</title>
-    <link rel="stylesheet" href="style.css">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Github Farorites</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+
+        <script type="module" defer src="js/main.js"></script>
 </head>
 <body>
-    <div>
+    <div id="app">
 
          <header>
             <h1>Github Favorites</h1>
             <div class="search">
-                <label for="input-search">Usuario do Github</label>
+                <label  class="sr-only" for="input-search">Usuario do Github</label>
                 <input  id="input-search" type="text" placeholder="Usuario do Github">
                 <button>&plus;</button>
             </div>
@@ -27,24 +35,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td class="user">
-                        <img src="https://github.com/rafaelokra.png" alt="">
-                        <a href="https://github.com/rafaelokra" target="_blank">
-                            <p>Rafael</p>
-                            <span></span>
-                        </a>
-                    </td>
-                    <td class="repositories">
-                        35
-                    </td>
-                    <td class="followers">
-                        1002
-                    </td>
-                    <td>
-                        <button>&times;</button>
-                    </td>
-                </tr>
+                
                 <td class="user">
                     <img src="https://github.com/rafaelokra.png" alt="">
                     <a href="https://github.com/rafaelokra" target="_blank">
@@ -59,7 +50,7 @@
                     1002
                 </td>
                 <td>
-                    <button>&times;</button>
+                    <button class="remove">&times;</button>
                 </td>
             </tbody>
             <tfoot></tfoot>
